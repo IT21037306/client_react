@@ -19,6 +19,7 @@
     "axios": "^1.7.4",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
+    "minimist": "^1.2.8",
     "node-static": "^0.7.11",
     "nth-check": "^2.0.1",
     "qrcode": "^1.5.3",
@@ -44,6 +45,9 @@
       "terser-webpack-plugin": {
         "serialize-javascript": "6.0.2"
       }
+    },
+    "optimist": {
+      "minimist": "1.2.8"
     }
   },
   "scripts": {
