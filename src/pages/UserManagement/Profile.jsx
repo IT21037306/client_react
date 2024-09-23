@@ -365,7 +365,7 @@ const Profile = () => {
               <Grid item xs={12} md={4} minWidth="280px" align="center">
                 <Box className="profile-pic" sx={{ overflow: "hidden" }}>
                   <img
-                    src={user.picture}
+                    src={picture}
                     style={{ maxWidth: "200px", minHeight: "200px" }}
                   ></img>
                 </Box>
