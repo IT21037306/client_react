@@ -19,6 +19,7 @@ import FlexBetween from "../../components/FlexBetween";
 import { useNavigate } from "react-router-dom";
 import CancelIcon from "@mui/icons-material/Cancel";
 import validator from "validator";
+import DOMPurify from "dompurify";
 
 const Profile = () => {
   const loggedUser = useSelector((state) => state.user);
@@ -350,6 +351,8 @@ const Profile = () => {
   const picture =
     user.picture && validator.isURL(user.picture) ? user.picture : "null";
 
+  const sanitizedPicture = DOMPurify.sanitize(picture);
+
   return (
     <>
       <Grid container spacing={2} padding={2}>
@@ -365,7 +368,7 @@ const Profile = () => {
               <Grid item xs={12} md={4} minWidth="280px" align="center">
                 <Box className="profile-pic" sx={{ overflow: "hidden" }}>
                   <img
-                    src={picture}
+                    src={sanitizedPicture}
                     style={{ maxWidth: "200px", minHeight: "200px" }}
                   ></img>
                 </Box>
