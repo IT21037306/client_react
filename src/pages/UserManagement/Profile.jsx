@@ -18,6 +18,7 @@ import QRCode from "qrcode";
 import FlexBetween from "../../components/FlexBetween";
 import { useNavigate } from "react-router-dom";
 import CancelIcon from "@mui/icons-material/Cancel";
+import validator from "validator";
 
 const Profile = () => {
   const loggedUser = useSelector((state) => state.user);
@@ -345,6 +346,9 @@ const Profile = () => {
 
     return errors;
   };
+
+  const picture =
+    user.picture && validator.isURL(user.picture) ? user.picture : "null";
 
   return (
     <>
