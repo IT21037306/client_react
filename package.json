@@ -22,6 +22,7 @@
     "minimist": "^1.2.8",
     "node-static": "^0.7.11",
     "nth-check": "^2.0.1",
+    "postcss": "^8.4.47",
     "qrcode": "^1.5.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -44,7 +45,8 @@
       "serialize-javascript": "6.0.2",
       "terser-webpack-plugin": {
         "serialize-javascript": "6.0.2"
-      }
+      },
+      "postcss": "8.4.31"
     },
     "optimist": {
       "minimist": "1.2.8"
