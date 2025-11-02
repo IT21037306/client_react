@@ -36,7 +36,7 @@
     "react-swipeable-views-utils": "^0.14.0",
     "redux-persist": "^6.0.0",
     "serialize-javascript": "^6.0.2",
-    "validator": "^13.12.0",
+    "validator": "^13.15.20",
     "web-vitals": "^2.1.4"
   },
   "overrides": {
